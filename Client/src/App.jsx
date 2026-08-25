@@ -15,6 +15,8 @@ import CreateProject from "./pages/CreateProject.jsx";
 import Start from "./pages/Start.jsx";
 import ProtectedRoute from "./components/protectedRoute.jsx";
 import PublicRoute from "./components/publicRoute.jsx";
+import MyProfile from "./pages/myProfile.jsx";
+import MyProjects from "./pages/MyProjects.jsx";
 
 function App() {
   return (
@@ -24,11 +26,13 @@ function App() {
         <Route path="/home" element={<ProtectedRoute><Home /></ProtectedRoute>} />
         <Route path="/login" element={<PublicRoute><Login /></PublicRoute>} />
         <Route path="/signup" element={<PublicRoute><Signup /></PublicRoute>} />
+        <Route path="/my-profile" element={<ProtectedRoute><MyProfile /></ProtectedRoute>} />
         <Route path="/connection-feed" element={<ProtectedRoute><ConnectionFeed /></ProtectedRoute>} />
         <Route path="/eventFeed" element={<ProtectedRoute><EventFeed /></ProtectedRoute>} />
         <Route path="/create-event" element={<ProtectedRoute><CreateEvent /></ProtectedRoute>} />
         <Route path="/myevents" element={<ProtectedRoute><MyEvents /></ProtectedRoute>} />
         <Route path="/project-Feed" element={<ProtectedRoute><ProjectFeed /></ProtectedRoute>} />
+        <Route path="/myprojects" element={<ProtectedRoute><MyProjects /></ProtectedRoute>} />
         <Route path="/create-project" element={<ProtectedRoute><CreateProject /></ProtectedRoute>} />
         <Route path="/job-Feed" element={<ProtectedRoute><JobFeed /></ProtectedRoute>} />
         <Route path="/pending-requests" element={<ProtectedRoute><PendingRequests /></ProtectedRoute>} />

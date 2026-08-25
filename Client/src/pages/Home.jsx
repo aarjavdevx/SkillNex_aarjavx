@@ -12,16 +12,13 @@ const HomePage = () => {
           backgroundPosition: "center",
         }}
       >
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-black/90 via-slate-900/80 to-emerald-950/80"></div>
+        <div className="absolute inset-0 bg-linear-to-br from-black/90 via-slate-900/80 to-emerald-950/80"></div>
 
-        {/* Background Blur */}
         <div className="absolute top-20 left-20 w-72 h-72 bg-emerald-500/20 blur-[120px] rounded-full"></div>
         <div className="absolute bottom-10 right-10 w-96 h-96 bg-blue-500/20 blur-[140px] rounded-full"></div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
-            {/* Left */}
 
             <div>
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-yellow-400/30 bg-yellow-500/10 text-yellow-300 text-sm font-medium mb-8">
@@ -33,7 +30,7 @@ const HomePage = () => {
                 <br />
                 Collaborate.
                 <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400">
+                <span className="text-transparent bg-clip-text bg-linear-to-r from-emerald-400 to-cyan-400">
                   Grow Together.
                 </span>
               </h1>
@@ -63,9 +60,9 @@ const HomePage = () => {
 
             <div className="hidden lg:flex justify-center">
               <div className="relative">
-                <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-emerald-500 to-cyan-500 blur-3xl opacity-25"></div>
+                <div className="absolute inset-0 rounded-3xl bg-linear-to-r from-emerald-500 to-cyan-500 blur-3xl opacity-25"></div>
 
-                <div className="relative w-[500px] rounded-3xl bg-white/5 backdrop-blur-xl border border-white/10 p-8 shadow-2xl">
+                <div className="relative w-125 rounded-3xl bg-white/5 backdrop-blur-xl border border-white/10 p-8 shadow-2xl">
                   <img
                     src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80"
                     className="rounded-2xl"
@@ -120,7 +117,6 @@ const HomePage = () => {
             </p>
           </div>
 
-          {/* Stats */}
 
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="rounded-3xl border border-base-300 bg-base-200 p-8 text-center hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
@@ -283,7 +279,6 @@ const HomePage = () => {
             </div>
           </div>
 
-          {/* Feature 5: Find Jobs */}
           <div className="card bg-base-100 shadow-xl border border-base-300/50 hover:-translate-y-2 hover:shadow-2xl hover:border-warning/50 transition-all duration-300 group">
             <div className="card-body">
               <div className="w-14 h-14 bg-warning/10 rounded-2xl flex items-center justify-center mb-4 text-warning group-hover:scale-110 transition-transform">
@@ -312,7 +307,7 @@ const HomePage = () => {
             </div>
           </div>
 
-          <div className="card bg-gradient-to-br from-primary/90 to-secondary/90 text-primary-content shadow-xl border border-transparent hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/30 transition-all duration-300 group">
+          <div className="card bg-linear-to-br from-primary/90 to-secondary/90 text-primary-content shadow-xl border border-transparent hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/30 transition-all duration-300 group">
             <div className="card-body">
               <div className="w-14 h-14 bg-white/20 rounded-2xl flex items-center justify-center mb-4 text-white group-hover:scale-110 transition-transform backdrop-blur-sm">
                 <svg
